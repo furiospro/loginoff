@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Кухни", 
+		"kitchen.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гарнитуры", 
+		"sets.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Спальни", 
+		"/products/beds/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

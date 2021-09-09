@@ -1862,5 +1862,10 @@ input{outline:none !important}
 	height:19px;
 	padding:3px 2px 0;
 }
-
+.item-selected{
+	background: #f7fafd;
+}
+.item-child-selected{
+	background:#e3f1ff;
+}
 /*================================================== pagination =========================================*/

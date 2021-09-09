@@ -7,7 +7,7 @@
 /bitrix/backup
 /local/vendor
 /upload
-
+new-page.php
 *.rar
 *.zip
 *.bak
