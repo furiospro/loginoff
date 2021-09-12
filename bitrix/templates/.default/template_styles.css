@@ -1868,4 +1868,16 @@ input{outline:none !important}
 .item-child-selected{
 	background:#e3f1ff;
 }
+.form-register > form div{
+	width:65%;
+	display:flex;
+	margin: 20px 0;
+}
+.form-register >form input{
+	margin:0 0 0 auto;
+	padding: 8px 10px;
+}
+.form-register >form label{
+	margin:auto 0;
+}
 /*================================================== pagination =========================================*/

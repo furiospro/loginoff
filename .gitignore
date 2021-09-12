@@ -8,6 +8,8 @@
 /local/vendor
 /upload
 new-page.php
+composer.phar
+/vendor
 *.rar
 *.zip
 *.bak
