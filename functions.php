@@ -1,6 +1,6 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
-
+require_once $_SERVER['DOCUMENT_ROOT'].'/In.php';
 require_once 'vendor/autoload.php';
 
 define ('STATUS_EMAIL','Message has been sent successfully');

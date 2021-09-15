@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
-?><?$APPLICATION->IncludeComponent("bitrix:furniture.vacancies", ".default", array(
+?><?$APPLICATION->IncludeComponent("bitrix:furniture.vacancies", "vac", array(
 	"IBLOCK_TYPE" => "vacancies",
 	"IBLOCK_ID" => "4",
 	"AJAX_MODE" => "N",
