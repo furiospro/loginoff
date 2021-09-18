@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-
+$APPLICATION->ShowTitle();
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"news_item", 
+	"bitrix:news.detail", 
+	"product_detail", 
 	array(
 		"IBLOCK_TYPE" => "products",
 		"IBLOCK_ID" => "2",
@@ -26,8 +26,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_SHADOW" => "N",
 		"AJAX_OPTION_JUMP" => "Y",
-		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "Y",
+		"AJAX_OPTION_STYLE" => "N",
+		"AJAX_OPTION_HISTORY" => "N",
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
 		"CACHE_FILTER" => "N",
@@ -52,7 +52,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"DISPLAY_NAME" => "Y",
 		"META_KEYWORDS" => "-",
 		"META_DESCRIPTION" => "-",
-		"BROWSER_TITLE" => "-",
+		"BROWSER_TITLE" => "NAME",
 		"DETAIL_ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"DETAIL_FIELD_CODE" => array(
 			0 => "",
@@ -76,7 +76,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
 		"PAGER_SHOW_ALL" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "news_item",
+		"COMPONENT_TEMPLATE" => "product_detail",
 		"USE_REVIEW" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"ADD_ELEMENT_CHAIN" => "N",
@@ -89,18 +89,24 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"SHOW_404" => "N",
 		"MESSAGE_404" => "",
-		"SEF_URL_TEMPLATES" => array(
-			"news" => "list.php?SECTION_ID=",
-			"section" => "#SECTION_ID#",
-			"detail" => "detail.php?ID=#ELEMENT_ID#",
-			"rss" => "rss/",
-			"rss_section" => "#SECTION_ID#/rss/",
+		"ELEMENT_ID" => $_REQUEST["ELEMENT_ID"],
+		"ELEMENT_CODE" => "",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
 		),
-		"VARIABLE_ALIASES" => array(
-			"detail" => array(
-				"ELEMENT_ID" => "ID",
-			),
-		)
+		"PROPERTY_CODE" => array(
+			0 => "SPECIALOFFER",
+			1 => "PRICE",
+			2 => "",
+		),
+		"IBLOCK_URL" => "",
+		"DETAIL_URL" => "",
+		"SET_CANONICAL_URL" => "N",
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_META_DESCRIPTION" => "Y",
+		"ACTIVE_DATE_FORMAT" => "d.m.Y"
 	),
 	false
 );?>

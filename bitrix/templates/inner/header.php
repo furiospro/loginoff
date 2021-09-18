@@ -37,5 +37,5 @@ IncludeTemplateLangFile(__FILE__);
 			<div class="mn_content">
 				<div class="main_post">
 					<div class="main_title">
-						<p class="title"></p>
+						<p class="title"><?$APPLICATION->ShowTitle();?></p>
 					</div>

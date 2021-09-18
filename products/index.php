@@ -7,7 +7,7 @@ $APPLICATION->SetTitle("Продукция");
 	array(
 		"ADD_SECTIONS_CHAIN" => "N",
 		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
+		"CACHE_GROUPS" => "N",
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"COUNT_ELEMENTS" => "Y",
@@ -30,7 +30,7 @@ $APPLICATION->SetTitle("Продукция");
 			1 => "",
 		),
 		"SHOW_PARENT_NAME" => "Y",
-		"TOP_DEPTH" => "2",
+		"TOP_DEPTH" => "3",
 		"VIEW_MODE" => "LINE",
 		"COMPONENT_TEMPLATE" => ".default"
 	),

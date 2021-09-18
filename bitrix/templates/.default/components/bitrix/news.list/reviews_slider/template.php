@@ -48,6 +48,6 @@ $this->setFrameMode(true);
 		</ul>
 		<div id="rwprev"></div>
 		<div id="rwnext"></div>
-		<a href="/company/reviewed/" class="rw_allreviewed"><?=mb_ucfirst(getMessage('ALL_REVIEWS'))?></a>
+		<a href="/company/reviews/" class="rw_allreviewed"><?=mb_ucfirst(getMessage('ALL_REVIEWS'))?></a>
 	</div>
 </div>

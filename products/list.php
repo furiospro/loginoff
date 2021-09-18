@@ -2,11 +2,11 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	".default", 
+	"bitrix:news.list",
+	".default",
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
 		"AJAX_OPTION_HISTORY" => "N",
@@ -17,7 +17,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"DETAIL_URL" => "#SITE_DIR#/products/detail.php?ID=#ID#&SECTION_ID=#SECTION_ID#",
+		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
@@ -27,7 +27,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"FIELD_CODE" => array(
 			0 => "NAME",
 			1 => "PREVIEW_TEXT",
-			2 => "PREVIEW_PICTURE",
+			2 => "DETAIL_PICTURE",
 			3 => "",
 		),
 		"FILTER_NAME" => "",
@@ -35,11 +35,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"IBLOCK_ID" => "2",
 		"IBLOCK_TYPE" => "products",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-		"INCLUDE_SUBSECTIONS" => "Y",
+		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
 		"NEWS_COUNT" => "20",
 		"PAGER_BASE_LINK_ENABLE" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING" => "Y",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_SHOW_ALWAYS" => "N",
@@ -49,10 +49,11 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "SPECIALOFFER",
+			1 => "PRICE",
+			2 => "",
 		),
-		"SET_BROWSER_TITLE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "N",
 		"SET_META_KEYWORDS" => "N",
@@ -63,7 +64,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N",
+		"STRICT_SECTION_CHECK" => "Y",
 		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false

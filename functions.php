@@ -28,7 +28,7 @@ function printVar($var){
 			padding: 0;
 			border: 1px solid #F5F5F5;
 			border-radius: 3px;
-			position: relative;
+			position: absolute;
 			z-index: 11111;
 		}
 
@@ -50,7 +50,7 @@ function printVar($var){
 			margin: 10px 30px;
 			padding: 1px;
 			border-radius: 5px;
-			position: relative;
+			position: absolute;
 			z-index: 11110;
 		}
 		div.cust_print_r_group div.cust_print_r {

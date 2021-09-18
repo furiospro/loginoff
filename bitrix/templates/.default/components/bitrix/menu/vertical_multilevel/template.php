@@ -8,6 +8,7 @@
 
 <?
 $previousLevel = 0;
+
 foreach($arResult as $arItem):?>
 
 	<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>

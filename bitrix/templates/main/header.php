@@ -65,57 +65,102 @@ IncludeTemplateLangFile(__FILE__);
 	<div class="main_container homepage">
 
 		<!-- events -->
-		<div class="ev_events">
-			<div class="ev_h">
-				<h3>Ближайшие события</h3>
-				<a href="" class="ev_allevents">Все мероприятия &rarr;</a>
-			</div>
-			<ul class="ev_lastevent">
-				<li>
-					<h4><a href="">29 августа 2012, Москва</a></h4>
-					<p>Семинар производителей мебели России и СНГ, Обсуждение тенденций.</p>
-				</li>
-				<li>
-					<h4><a href="">30 августа 2012, Санкт-Петербург</a></h4>
-					<p>Открытие шоу-рума на Невском проспекте. Последние модели в большом ассортименте.</p>
-				</li>
-				<li>
-					<h4><a href="">31 августа 2012, Краснодар</a></h4>
-					<p>Открытие нового магазина в нашей дилерской сети.</p>
-				</li>
-			</ul>
-			<div class="clearboth"></div>
-		</div>
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:news.list",
+			"events",
+			Array(
+				"ACTIVE_DATE_FORMAT" => "j F Y",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_ADDITIONAL" => "",
+				"AJAX_OPTION_HISTORY" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "Y",
+				"CACHE_TIME" => "36000000",
+				"CACHE_TYPE" => "A",
+				"CHECK_DATES" => "N",
+				"COMPONENT_TEMPLATE" => ".default",
+				"DETAIL_URL" => "",
+				"DISPLAY_BOTTOM_PAGER" => "N",
+				"DISPLAY_DATE" => "Y",
+				"DISPLAY_NAME" => "N",
+				"DISPLAY_PICTURE" => "Y",
+				"DISPLAY_PREVIEW_TEXT" => "Y",
+				"DISPLAY_TOP_PAGER" => "N",
+				"FIELD_CODE" => array(0=>"",1=>"",),
+				"FILTER_NAME" => "",
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+				"IBLOCK_ID" => "7",
+				"IBLOCK_TYPE" => "reviews",
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+				"INCLUDE_SUBSECTIONS" => "Y",
+				"MESSAGE_404" => "",
+				"NEWS_COUNT" => "3",
+				"PAGER_BASE_LINK_ENABLE" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "N",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_TEMPLATE" => ".default",
+				"PAGER_TITLE" => "",
+				"PARENT_SECTION" => "",
+				"PARENT_SECTION_CODE" => "",
+				"PREVIEW_TRUNCATE_LEN" => "",
+				"PROPERTY_CODE" => array(0=>"LOCATION",1=>"",),
+				"SET_BROWSER_TITLE" => "N",
+				"SET_LAST_MODIFIED" => "N",
+				"SET_META_DESCRIPTION" => "N",
+				"SET_META_KEYWORDS" => "N",
+				"SET_STATUS_404" => "N",
+				"SET_TITLE" => "N",
+				"SHOW_404" => "N",
+				"SORT_BY1" => "ACTIVE_FROM",
+				"SORT_BY2" => "",
+				"SORT_ORDER1" => "ASC",
+				"SORT_ORDER2" => "ASC",
+				"STRICT_SECTION_CHECK" => "N"
+			)
+		);?>
 		<!-- // end events -->
 		<div class="cn_hp_content">
 			<div class="cn_hp_category">
-				<ul>
-					<li>
-						<img src="/bitrix/templates/.default/content/1.png" alt=""/>
-						<h2><a href="">Мягкая мебель</a></h2>
-						<p>Диваны, кресла и прочая мягкая мебель <a class="cn_hp_categorymore" href="">&rarr;</a></p>
-						<div class="clearboth"></div>
-					</li>
-					<li>
-						<img src="/bitrix/templates/.default/content/2.png" alt=""/>
-						<h2><a href="">Офисная мебель</a></h2>
-						<p>Диваны, столы, стулья <a class="cn_hp_categorymore" href="">&rarr;</a></p>
-						<div class="clearboth"></div>
-					</li>
-					<li>
-						<img src="/bitrix/templates/.default/content/3.png" alt=""/>
-						<h2><a href="">Мебель для кухни</a></h2>
-						<p>Полки, ящики, столы и стулья <a class="cn_hp_categorymore" href="">&rarr;</a></p>
-						<div class="clearboth"></div>
-					</li>
-					<li>
-						<img src="/bitrix/templates/.default/content/4.png" alt=""/>
-						<h2><a href="">Детская мебель</a></h2>
-						<p>Кровати, стулья, мягкая детская мебель <a class="cn_hp_categorymore" href="">&rarr;</a></p>
-						<div class="clearboth"></div>
-					</li>
-				</ul>
-				<a href="" class="cn_hp_category_more">Все разделы каталога &rarr;</a>
+				<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section.list",
+	"main.section.list",
+	array(
+		"ADD_SECTIONS_CHAIN" => "N",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "N",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"COMPONENT_TEMPLATE" => "main.section.list",
+		"COUNT_ELEMENTS" => "Y",
+		"COUNT_ELEMENTS_FILTER" => "CNT_ALL",
+		"FILTER_NAME" => "sectionsFilter",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "products",
+		"SECTION_CODE" => "",
+		"SECTION_FIELDS" => array(
+			0 => "ID",
+			1 => "NAME",
+			2 => "DESCRIPTION",
+			3 => "PICTURE",
+			4 => "",
+		),
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_URL" => "#SITE_DIR#/products/list.php?SECTION_ID=#SECTION_ID#",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"SHOW_PARENT_NAME" => "Y",
+		"TOP_DEPTH" => "3",
+		"VIEW_MODE" => "LINE"
+	),
+	false
+);?>
 			</div>
 			<div class="cn_hp_post">
 				<div class="cn_hp_post_new">
@@ -259,7 +304,7 @@ IncludeTemplateLangFile(__FILE__);
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N",
-		"COMPONENT_TEMPLATE" => "reviews"
+		"COMPONENT_TEMPLATE" => "reviews_slider"
 	),
 	false
 );?>
