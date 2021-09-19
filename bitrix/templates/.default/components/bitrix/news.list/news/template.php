@@ -11,6 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+
 ?>
 <div class="cn_hp_lastnews">
 	<h3><a href="/news/"><?=mb_ucfirst(getMessage('NEWS'));?></a></h3>

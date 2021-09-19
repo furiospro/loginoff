@@ -14,7 +14,6 @@ $this->setFrameMode(true);
 
 ?>
 
-
 <div class="ev_events">
 	<div class="ev_h">
 		<h3>Ближайшие события</h3>

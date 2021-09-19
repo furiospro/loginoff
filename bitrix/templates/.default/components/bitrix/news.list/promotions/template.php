@@ -11,7 +11,7 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-//debug($arResult);
+
 ?>
 
 <div class="sb_action">

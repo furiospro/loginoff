@@ -53,7 +53,7 @@ IncludeTemplateLangFile(__FILE__);
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"COMPONENT_TEMPLATE" => "promotions",
-		"DETAIL_URL" => "",
+		"DETAIL_URL" => "#ELEMENT_ID#/",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",
@@ -86,7 +86,7 @@ IncludeTemplateLangFile(__FILE__);
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
-			0 => "",
+			0 => "PRICE",
 			1 => "price",
 			2 => "",
 		),
