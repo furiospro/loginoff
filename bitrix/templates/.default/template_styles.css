@@ -1142,6 +1142,12 @@ input{outline:none !important}
 	padding:0;
 	display:block;
 	position:relative;
+	opacity:1;
+	float: unset;
+	font-size: 21px;
+	font-weight: unset;
+	text-shadow:unset;
+	filter: alpha(opacity=20);
 }
 .sb_nav>ul>li:first-child{border-radius:5px 5px 0 0}
 .sb_nav>ul>li .sb_showchild{
@@ -1879,5 +1885,8 @@ input{outline:none !important}
 }
 .form-register >form label{
 	margin:auto 0;
+}
+.m-0{
+	margin:0;
 }
 /*================================================== pagination =========================================*/

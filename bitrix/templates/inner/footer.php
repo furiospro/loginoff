@@ -53,7 +53,7 @@ IncludeTemplateLangFile(__FILE__);
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"COMPONENT_TEMPLATE" => "promotions",
-		"DETAIL_URL" => "#ELEMENT_ID#/",
+		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
 		"DISPLAY_NAME" => "Y",

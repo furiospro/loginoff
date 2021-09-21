@@ -2,7 +2,7 @@
 
 <?if (!empty($arResult)):?>
 <div class="nv_topnav">
-<ul>
+<ul class="m-0">
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
