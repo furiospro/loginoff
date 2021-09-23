@@ -68,7 +68,9 @@ if ($isFilter)
 	}
 	if (!isset($arCurSection))
 		$arCurSection = array();
+
 }
+
 ?>
 <div class="row">
 <?

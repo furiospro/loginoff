@@ -71,5 +71,5 @@ $arJSParams = array(
 	</tr>
 </table>
 <script type="text/javascript">
-	<?=$strObName;?> = new JCIblockVoteStars(<?=CUtil::PhpToJSObject($arJSParams, false, true, true);?>);
+	<?php echo $strObName;?> = new JCIblockVoteStars(<?=CUtil::PhpToJSObject($arJSParams, false, true, true);?>);
 </script>

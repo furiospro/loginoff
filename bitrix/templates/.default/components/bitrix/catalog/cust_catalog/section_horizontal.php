@@ -10,7 +10,7 @@ use Bitrix\Main\ModuleManager;
  * @var array $arResult
  * @var array $arCurSection
  */
-
+/** @var CBitrixComponentTemplate $this */
 if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP']) && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] === 'Y')
 {
 	$basketAction = isset($arParams['COMMON_ADD_TO_BASKET_ACTION']) ? $arParams['COMMON_ADD_TO_BASKET_ACTION'] : '';
@@ -22,7 +22,7 @@ else
 ?>
 	<div class="<?=($isSidebar ? "col-md-9 col-sm-8" : "col-xs-12")?>">
 		<div class="row">
-			<? if ($isFilter): ?>
+			<? if ($isFilter): $this->SetViewTarget('filter');?>
 				<div class="col-xs-12<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' hidden-xs' : '')?>">
 					<?
 					$APPLICATION->IncludeComponent(
@@ -57,7 +57,7 @@ else
 					);
 					?>
 				</div>
-			<? endif ?>
+			<? $this->EndViewTarget(); endif; ?>
 			<div class="col-xs-12">
 				<?
 				if (ModuleManager::isModuleInstalled("sale"))
@@ -366,6 +366,7 @@ else
 				);
 				?>
 			</div>
+
 			<?
 			$GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;
 
