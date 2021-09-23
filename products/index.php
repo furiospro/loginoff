@@ -33,7 +33,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 			0 => "POPUP",
 			1 => "MAGNIFIER",
 		),
-		"DETAIL_DISPLAY_NAME" => "Y",
+		"DETAIL_DISPLAY_NAME" => "N",
 		"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
 		"DETAIL_IMAGE_RESOLUTION" => "16by9",
 		"DETAIL_META_DESCRIPTION" => "-",
